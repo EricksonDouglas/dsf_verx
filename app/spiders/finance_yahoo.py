@@ -89,7 +89,7 @@ class FinanceYahoo(SeleniumBrowser, BeautifulSoupHtml, Robots):
         self.__logger = LogBots("Finance", "", "FinanceYahoo")
         self.__params = params
         self.__url = "https://finance.yahoo.com/screener/new"
-        self.__browser = self.browser_connect(headless=True)
+        self.__browser = self.browser_connect(headless=False)
         self.__result = []
 
     @property
